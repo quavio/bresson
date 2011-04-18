@@ -1,0 +1,3 @@
+module Bresson
+  VERSION = "0.0.1"
+end
