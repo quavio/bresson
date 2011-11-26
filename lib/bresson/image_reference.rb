@@ -10,6 +10,10 @@ module Bresson
     def method_missing name, *args
       eval "@item.#{name}(args)"
     end
-    
+
+    def to_s
+      "{'reference':'upload','source':'#{@item.class.to_s}','link':#{@link}}"
+    end
+
   end
 end
