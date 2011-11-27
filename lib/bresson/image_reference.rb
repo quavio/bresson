@@ -12,7 +12,7 @@ module Bresson
     end
 
     def to_s
-      "{'reference':'upload','source':'#{@item.class.to_s.split('::').last}','link':'#{@link}'}"
+      '{"reference":"upload","source":"'+@item.class.to_s.split('::').last+'","link":"'+@link+'"}'
     end
 
   end
